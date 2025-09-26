@@ -76,7 +76,7 @@ const Index = () => {
 
   function handledButton(){
     registerDownload()
-    window.location.href = 'https://www.golesya.com/golesya-app.apk'
+    window.location.href = 'https://www.jogoshoje.site/jogoshoje.apk'
   }
 
   return (
