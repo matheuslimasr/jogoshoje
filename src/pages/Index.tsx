@@ -89,7 +89,7 @@ const Index = () => {
       
       {/* Installation Steps Section */}
       <section className="py-20 px-4" style={{
-        backgroundImage: "url('http://localhost:8080/bg-footer.png')",
+        backgroundImage: "url('https://www.jogoshoje.site/bg-footer.png')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}>
