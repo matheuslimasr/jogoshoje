@@ -2,10 +2,9 @@ import Hero from "@/components/Hero";
 import VideoTutorial from "@/components/VideoTutorial";
 import { Button } from "@/components/ui/button";
 import { Download, FileDown, Folder, Settings, CheckCircle } from "lucide-react";
-import videoFile from "@/assets/instalacion.mp4";
+import videoFile from "@/assets/0927.mp4";
 import { ref, push, set } from "firebase/database";
 import imgWhatsApp from "@/assets/whatsapp.png";
-import imgTelegram from "@/assets/telegram.png";
 
 import {db} from "../../firebaseConfig";
 
