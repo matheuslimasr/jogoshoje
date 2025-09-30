@@ -141,7 +141,7 @@ const Index = () => {
       </section>
 
       <div className="fixed bottom-[30px] right-[30px] cursor-pointer" onClick={() => {
-        window.location.href = 'https://api.whatsapp.com/send?phone=34639249529'
+        window.location.href = 'https://api.whatsapp.com/send?phone=5511921439247'
       }}>
         <img src={imgWhatsApp} width={70} height={70} alt="Atendimento Jogos Hoje" />
       </div>
