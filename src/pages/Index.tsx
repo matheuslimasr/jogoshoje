@@ -6,7 +6,10 @@ import videoFile from "@/assets/0927.mp4";
 import { ref, push, set } from "firebase/database";
 import imgWhatsApp from "@/assets/whatsapp.png";
 
+import { requestForToken, onMessageListener } from "../firebase";
+
 import {db} from "../../firebaseConfig";
+import { useEffect } from "react";
 
 const Index = () => {
   const installationSteps = [
@@ -77,6 +80,15 @@ const Index = () => {
     registerDownload()
     window.location.href = 'https://www.jogoshoje.site/jogoshoje.apk'
   }
+
+  useEffect(() => {
+    requestForToken(); // pede permissão ao usuário
+
+    onMessageListener().then((payload) => {
+      console.log("Mensagem recebida em foreground:", payload);
+      alert(payload.notification.title + " - " + payload.notification.body);
+    });
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
